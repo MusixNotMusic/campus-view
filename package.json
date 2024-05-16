@@ -2,6 +2,7 @@
   "name": "campus-view",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -9,6 +10,9 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "dat.gui": "^0.7.9",
+    "lodash": "^4.17.21",
+    "three": "^0.164.1",
     "vue": "^3.2.13"
   },
   "devDependencies": {
