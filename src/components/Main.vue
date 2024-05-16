@@ -12,7 +12,7 @@
         const mainViewerRef = ref(null);
         let instance;
         onMounted(() => {
-            instance = new Viewer(mainViewerRef.value, {});
+            instance = new Viewer(mainViewerRef.value, { preset: 'assetgenerator'});
             instance.load('/model/compus.glb')
         })
 

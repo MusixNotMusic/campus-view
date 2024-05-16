@@ -102,7 +102,7 @@ export default class Viewer {
 
 		const fov = options.preset === Preset.ASSET_GENERATOR ? (0.8 * 180) / Math.PI : 60;
 		const aspect = el.clientWidth / el.clientHeight;
-		this.defaultCamera = new PerspectiveCamera(fov, aspect, 0.01, 1000);
+		this.defaultCamera = new PerspectiveCamera(fov, aspect, 0.01, 10000);
 		this.activeCamera = this.defaultCamera;
 		this.scene.add(this.defaultCamera);
 
