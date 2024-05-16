@@ -588,6 +588,9 @@ export default class Viewer {
 		perfFolder.__ul.appendChild(perfLi);
 
 		const guiWrap = document.createElement('div');
+        guiWrap.style.position = 'fixed';
+        guiWrap.style.top = '0';
+        guiWrap.style.right = '0';
 		this.el.appendChild(guiWrap);
 		guiWrap.classList.add('gui-wrap');
 		guiWrap.appendChild(gui.domElement);

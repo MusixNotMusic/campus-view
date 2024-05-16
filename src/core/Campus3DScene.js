@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js';
 
 
 export default class Campus3DScene {
@@ -76,6 +77,10 @@ export default class Campus3DScene {
 
     initCampus() {
         const loader = new GLTFLoader();
+
+        const dracoLoader = new DRACOLoader();
+        dracoLoader.setDecoderPath( '/examples/jsm/libs/draco/' );
+        loader.setDRACOLoader( dracoLoader );
 
         loader.load(
             // resource URL

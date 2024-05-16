@@ -17,6 +17,7 @@
         })
 
         onUnmounted(() => {
+            if(instance && instance.dispose) instance.dispose();
         })
 
         return {
